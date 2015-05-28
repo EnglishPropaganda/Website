@@ -1,16 +1,22 @@
 /* Generic Selectors */
  
- html {
- 	background: #A31A1A center center fixed;
- 	background-size: cover;
- 	padding: 1px 1px 1px 1px;
- }
+html {
+	background: #A31A1A center center fixed;
+	background-size: cover;
+	padding: 1px 1px 1px 1px;
+}
+html.signup {
+    background: #A31A1A center center fixed;
+	background-size: cover;
+	padding: 1px 1px 1px 1px;
+}
+
 body {
 	display: block;
-   font-family: Arial, Georgia, "Times New Roman", Times, serif;
-   font-size: 14px;
-   color: #000000;
-   overflow: scroll;
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+    overflow: auto;
 }
  
 li {
@@ -624,7 +630,7 @@ div.titlebar h1 {
 .sl_i:target ~ #slideshow .slider									{ visibility: hidden }
 .sl_i:target ~ #slideshow .slider figcaption						{ visibility: hidden }
 .sl_i:target ~ #slideshow .dots_commands li:first-child a:after		{ display:none; }
-.sl_i:target ~ #slideshow .dots_commands li:first-child a:before	{ display:block; }}
+.sl_i:target ~ #slideshow .dots_commands li:first-child a:before	{ display:block; }
 
 #sl_i1:target ~ #slideshow .commands								{ display: none; }
 #sl_i1:target ~ #slideshow .commands1								{ display: block; }
@@ -650,31 +656,49 @@ div.titlebar h1 {
 div.joinArea {
 	height: 100px;
 	position: relative;
-	/*background: red;*/
- }
- div.joinArea button {
+	border: 1px solid #C6EC8C;
+}
+div.joinArea button {
  	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%)
- }
+}
+div.joinArea p {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+div.leftFiller {
+	position: relative;
+	height: 400px;
+}
+div.leftFiller h2 {
+	font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+div.leftFiller p {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
  
- div.leftFiller {
- 	position: relative;
- 	height: 400px;
- }
- div.leftFiller img {
- 	/* nothing for now */
- }
- 
- div.bandwagon {
-	position: relative; 	
- 	height: 100px;
- 	background: green;
- 	/* NOT YET IMPLEMENTED */
- }
- div.bandwagon p {
+div.bandwagon {
+position: relative; 	
+	height: 100px;
+	border: 1px solid #C6EC8C;
+}
+div.bandwagon p {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
  	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -683,26 +707,63 @@ div.joinArea {
  }
  
 div.centralText {
- 	padding: 10px 10px 10px 10px;
- }
- 
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    height: 125px;
+}
+div.centralText h2 {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+div.centralText p {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+div.centralImage {
+    padding: 10px 10px 10px 10px;
+	position: relative;
+	height: 100px;
+}
+div.centralImage img {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
 div.recentActivity {
 	padding: 10px 10px 10px 10px;
 	position: relative;
 	height: 450px;
-	/* NOT YET IMPLEMENTED */
-} 
+}
+div.recentActivity h2 {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+div.recentActivity p {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
 
 div.testemonial {
 	/* NOT YET IMPLEMENTED */
 	position: relative;
 	height: 100px;
+	border-top: 1px solid #C6EC8C;
 }
 div.testemonial q {
 	position: absolute;
 	font-family: Arial, Georgia, "Times New Roman", Times, serif;
-   font-size: 20px;
-   quotes: '«' '»';
+    font-size: 22px;
+    quotes: '«' '»';
 	top: 50%;
 	left: 50%;
 	margin-right: -50%;
@@ -723,7 +784,7 @@ html.signup {
  
 div.signupForm {
 	border-radius: 25px;
-	border: 2px solid #8AC007
+	border: 2px solid #000000;
 	padding: 10px 10px 10px 10px;
  	background: #FFFFFF;
  	position: absolute;
