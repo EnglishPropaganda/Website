@@ -3,101 +3,165 @@
  html {
  	background: #A31A1A center center fixed;
  	background-size: cover;
+ 	padding: 1px 1px 1px 1px;
  }
 body {
 	display: block;
-   font-family: Georgia, "Times New Roman", Times, serif;
+   font-family: Arial, Georgia, "Times New Roman", Times, serif;
    font-size: 14px;
-   color: #333333;
-   overflow:hidden;
+   color: #000000;
+   overflow: scroll;
 }
- 
- p.quote {
- 	/* NOT YET IMPLEMENTED */
- }
  
 li {
    list-style-type: none;
 }
  
 h1 {
-   font-family: Georgia, "Times New Roman", Times, serif;
+   font-family: Arial, Georgia, "Times New Roman", Times, serif;
    font-size: 44px;
    font-weight: bold;
    color: #000000;
 }
  
 h2 {
-   font-family: Georgia, "Times New Roman", Times, serif;
+   font-family: Arial, Georgia, "Times New Roman", Times, serif;
    font-size: 16px;
    font-weight: bold;
    color: #000000;
    border-bottom: 1px solid #C6EC8C;
 }
  
- .titlebar {
+ div.titlebar {
+ 	position: relative;
  	height: 50px;
- 	font-family: Georgia, "Times New Roman", Times, serif;
-   font-size: 44px;
-   font-weight: bold;
-   color: black;
    background: linear-gradient(to right, #A31A1A , #000000);
  	/* NOT YET IMPLEMENTED */
  }
+div.titlebar h1 {
+	font-family: Arial, Georgia, "Times New Roman", Times, serif;
+   font-size: 44px;
+   font-weight: bold;
+   color: black;
+}
  
- .slideshow {
- 	height: 20px;
+div.slideshow {
+	position: relative;
+ 	height: 250px;
+ 	background: blue;
  	/* NOT YET IMPLEMENTED */
  }
- 
- .joinArea {
-	height: 50px;
+ div.slideshow p {
+ 	background: yellow;
+ 	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
  }
  
- .bandwagon {
- 	height: 50px;
+ div.joinArea {
+	height: 100px;
+	position: relative;
+	/*background: red;*/
+ }
+ div.joinArea button {
+ 	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+ }
+ 
+ div.leftFiller {
+ 	position: relative;
+ 	height: 400px;
+ }
+ div.leftFiller img {
+ 	/* nothing for now */
+ }
+ 
+ div.bandwagon {
+	position: relative; 	
+ 	height: 100px;
+ 	background: green;
  	/* NOT YET IMPLEMENTED */
  }
- 
- .centralText {
- 	margin-left: 10px;
- 	margin-right: 10px;
- 	margin-top: 10px;
- 	margin-bottom: 10px;
+ div.bandwagon p {
+ 	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
  }
  
-.recentActivity {
-	margin-left: 10px;
- 	margin-right: 10px;
- 	margin-top: 10px;
- 	margin-bottom: 10px;
+div.centralText {
+ 	padding: 10px 10px 10px 10px;
+ }
+ 
+div.recentActivity {
+	padding: 10px 10px 10px 10px;
+	position relative;
+	height: 450px;
 	/* NOT YET IMPLEMENTED */
 } 
 
-.testemonial {
+div.testemonial {
 	/* NOT YET IMPLEMENTED */
+	position: relative;
+	height: 100px;
 }
- .signup {
+div.testemonial q {
+	position: absolute;
+	font-family: Arial, Georgia, "Times New Roman", Times, serif;
+   font-size: 20px;
+   quotes: '«' '»';
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+div.testemonial p {
+	position: absolute;
+	font-family: Arial, Georgia, "Times New Roman", Times, serif;
+   font-size: 14px;
+	top: 60%;
+	left: 50%;
+}
+ html.signup {
+ 	/* Need to implement background */
  	/* NOT YET IMPLEMENTED */
  }
  
- .signupForm {
- 	/* NOT YET IMPLEMENTED */
+ div.signupForm {
+ 	background: #FFFFFF;
+ 	position relative;
+ 	width: 100%;
+ 	height: 100%;
  }
- 
- .left {
- 	clear: right;
+ div.signupForm p {
+ 	position: absolute;
+ 	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+ }
+ div.left {
+ 	position: relative;
+ 	clear: left;
  	float: left;
  	width: 25%;
  }
  
- .right {
- 	clear: left;
+ div.right {
+ 	position: relative;
+ 	clear: right;;
  	float: right;
  	width: 25%;
  }
  
- .center {
+ div.center {
+ 	position: relative;
  	clear: both;
  	display: inline-block;
  	width: 50%;
@@ -149,14 +213,4 @@ li a:hover {
 a:active {
    color: rgb(255, 0, 102);
    font-weight: bold;
-}
- 
-/************************* ID's *************************/
- 
-#join {
-	
-}
-
-#leftFiller {
-	height: 50%;
 }
