@@ -124,17 +124,20 @@ div.testemonial q {
 div.testemonial p {
 	position: absolute;
 	font-family: Arial, Georgia, "Times New Roman", Times, serif;
-   font-size: 14px;
+	font-size: 14px;
 	top: 60%;
 	left: 50%;
 }
- html.signup {
- 	/* Need to implement background */
- 	/* NOT YET IMPLEMENTED */
- }
+
+html.signup {
+	/* Need to implement background */
+	/* NOT YET IMPLEMENTED */
+}
  
 div.signupForm {
-	padding: 10px 10px 10px 10px; /* NEED TO ROUND EDGES */
+	border-radius: 25px;
+	border: 2px solid #8AC007
+	padding: 10px 10px 10px 10px;
  	background: #FFFFFF;
  	position: absolute;
 	top: 50%;
