@@ -1,14 +1,15 @@
 /* Generic Selectors */
  
+ html {
+ 	background: #A31A1A center center fixed;
+ 	background-size: cover;
+ }
 body {
+	display: block;
    font-family: Georgia, "Times New Roman", Times, serif;
    font-size: 14px;
    color: #333333;
-   background-color: #F9F9F9;
-}
- 
-p {
-   width: 80%;
+   overflow:hidden;
 }
  
  p.quote {
@@ -17,12 +18,11 @@ p {
  
 li {
    list-style-type: none;
-   line-height: 150%;
 }
  
 h1 {
    font-family: Georgia, "Times New Roman", Times, serif;
-   font-size: 18px;
+   font-size: 44px;
    font-weight: bold;
    color: #000000;
 }
@@ -36,26 +36,41 @@ h2 {
 }
  
  .titlebar {
+ 	height: 50px;
+ 	font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 44px;
+   font-weight: bold;
+   color: black;
+   background: linear-gradient(to right, #A31A1A , #000000);
  	/* NOT YET IMPLEMENTED */
  }
  
  .slideshow {
+ 	height: 20px;
  	/* NOT YET IMPLEMENTED */
  }
  
  .joinArea {
- 	/* NOT YET IMPLEMENTED */
+	height: 50px;
  }
  
  .bandwagon {
+ 	height: 50px;
  	/* NOT YET IMPLEMENTED */
  }
  
  .centralText {
- 	/* NOT YET IMPLEMENTED */
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
  }
  
 .recentActivity {
+	margin-left: 10px;
+ 	margin-right: 10px;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
 	/* NOT YET IMPLEMENTED */
 } 
 
@@ -70,6 +85,23 @@ h2 {
  	/* NOT YET IMPLEMENTED */
  }
  
+ .left {
+ 	clear: right;
+ 	float: left;
+ 	width: 25%;
+ }
+ 
+ .right {
+ 	clear: left;
+ 	float: right;
+ 	width: 25%;
+ }
+ 
+ .center {
+ 	clear: both;
+ 	display: inline-block;
+ 	width: 50%;
+ }
  
 /**************** Pseudo classes ****************/
  
@@ -121,19 +153,10 @@ a:active {
  
 /************************* ID's *************************/
  
-#navigation {
-   position: absolute;
-   width: 210px;
-   height: 600px;
-   margin: 0;
-   margin-top: 50px;
-   border-right: 1px solid #C6EC8C;
-   font-weight: normal;
+#join {
+	
 }
- 
-#centerDoc {
-   position: absolute;
-   padding: 0 0 20px 0; /*top right bottom left*/
-   margin-top: 50px;
-   margin-left: 235px;
+
+#leftFiller {
+	height: 50%;
 }
