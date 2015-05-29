@@ -18,7 +18,7 @@ body {
     color: #000000;
     overflow: auto;
 }
- 
+
 li {
    list-style-type: none;
 }
@@ -81,9 +81,9 @@ div.titlebar {
 }
 div.titlebar h1 {
 	font-family: Arial, Georgia, "Times New Roman", Times, serif;
-   font-size: 44px;
-   font-weight: bold;
-   color: black;
+    font-size: 44px;
+    font-weight: bold;
+    color: black;
 }
 
 #slideshow {
@@ -356,11 +356,13 @@ div.titlebar h1 {
 .sl_i:target ~ #slideshow .slider {
 	-webkit-transition: left 1s;
 	-moz-transition: left 1s;
+	-o-transition: left 1s;
 	transition: left 1s;
 }
 .sl_command:target ~ #slideshow .slider {
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
 	transition: opacity 1s;
 }
 #slideshow .c_slider {
@@ -709,7 +711,7 @@ div.bandwagon p {
 div.centralText {
     padding: 10px 10px 10px 10px;
     position: relative;
-    height: 125px;
+    height: 250px;
 }
 div.centralText h2 {
     font-family: Arial, Georgia, "Times New Roman", Times, serif;
